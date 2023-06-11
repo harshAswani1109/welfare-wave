@@ -1,0 +1,27 @@
+[
+    {
+        "idx": 1,
+        "question":"What is Welfare Wave ?",
+        "answer":"The Welfare Wave website offers step-by-step guidance on applying for different social welfare programs. You can find downloadable forms, instructions, and helpful tips to ensure accurate and efficient completion of your applications. For certain programs, we also provide options for digital forms or online application submissions."
+    },
+    {
+        "idx": 2,
+        "question":"How can I get involved and make a difference in my community through volunteering ?",
+        "answer":"Our website features a dedicated section where you can explore volunteering opportunities with various social welfare organizations. You can find projects aligned with your interests, learn about the volunteering requirements, and directly connect with organizations to offer your time and skills for community development."
+    },
+    {
+        "idx": 3,
+        "question":"Can I contribute to social welfare causes through the website ?",
+        "answer":"Absolutely! The Welfare Wave website allows you to connect with organizations and projects focused on social welfare. You can browse volunteering opportunities, make donations, or participate in fundraising campaigns directly through the website. Together, we can make a positive impact on the community."
+    },
+    {
+        "idx": 4,
+        "question":"How can I determine if I qualify for any welfare programs ?",
+        "answer":"Our website features an eligibility assessment tool that allows you to input your details and find out which welfare programs you may qualify for based on your circumstances. The tool provides clear explanations of eligibility criteria and directs you to the appropriate resources for further assistance."
+    },
+    {
+        "idx": 5,
+        "question":"Is my payment information safe when using the scanner feature ?",
+        "answer":"Absolutely. We prioritize the security of your payment information. Our scanner feature uses industry-standard encryption and security measures to protect your sensitive data. Rest assured that your payment details are handled securely throughout the donation process."
+    }
+]
