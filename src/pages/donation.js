@@ -8,8 +8,6 @@ const Donation = () => {
       </div>
       <div className="flex justify-evenly items-center flex-wrap">
         <DonationCard />
-        <DonationCard />
-        <DonationCard />
       </div>
       <div className="px-10 mt-4">
         <p className="">
@@ -31,7 +29,7 @@ const Donation = () => {
           that promote social justice, equality, and environmental
           sustainability. Donating is an expression of solidarity, kindness, and
           compassion.
-        </p>{" "}
+        </p>
         <p className="max-lg:hidden">
           It is a way to uplift others and create a ripple effect of positive
           change. Your generosity can inspire others to join the cause,
