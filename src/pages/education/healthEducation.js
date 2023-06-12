@@ -101,7 +101,7 @@ const HealthEducation = () => {
                   <li>{item.list1}</li>
                   <li>{item.list2}</li>
                   <li>{item.list3}</li>
-                  <li>{item.list4}</li>
+                  {/* <li>{item.list4}</li> */}
                 </div>
               </div>
             </div>
