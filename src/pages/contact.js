@@ -22,7 +22,7 @@ const Contact = () => {
 
   return (
     <div className="xl:container mx-auto mb-32">
-      <div className="flex justify-center bg-gradient-to-r from-blue-700 to-sky-500">
+      <div className="flex justify-center bg-gray-700">
         <h1 className="text-4xl sm:text-6xl text-white uppercase pt-4 py-10">
           Contact Us
         </h1>
@@ -85,7 +85,7 @@ const Contact = () => {
               />
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-blue-500 text-white font-medium uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-500 focus:outline-none focus:ring-0 active:bg-blue-600 transition duration-300"
+                className="w-full px-6 py-3 bg-blue-600 text-white font-medium uppercase rounded shadow-md hover:bg-blue-800 hover:shadow-lg focus:bg-blue-500 focus:outline-none focus:ring-0 active:bg-blue-600 transition duration-300"
               >
                 Submit
               </button>
