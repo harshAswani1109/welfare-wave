@@ -1,6 +1,40 @@
 import Link from "next/link";
 
-const DropDown = () => {
+const DropDown = ({ handler }) => {
+  const handleClick = () => {
+    handler();
+  };
+  const data = [
+    {
+      link: "/education/lifeSkillEducation",
+      title: "Life Skills Training",
+    },
+    {
+      link: "/education/healthEducation",
+      title: "Health Education",
+    },
+    {
+      link: "/education/financialLiteracy",
+      title: "Financial Literacy",
+    },
+    {
+      link: "/education/socialEmotional",
+      title: "Social and Emotional Learning",
+    },
+    {
+      link: "/education/legalRights",
+      title: "Legal Rights and Advocacy",
+    },
+    {
+      link: "/education/environmental",
+      title: "Environmental Awareness",
+    },
+    {
+      link: "/education/culturalDiversity",
+      title: "Cultural and Diversity Education",
+    },
+  ];
+
   return (
     <div className="origin-top-right absolute mt-2 w-64 max-md:first-letter:left-2 md:-right-20 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10">
       <div
@@ -9,55 +43,17 @@ const DropDown = () => {
         aria-orientation="vertical"
         aria-labelledby="options-menu"
       >
-        <Link
-          href="/education/lifeSkillEducation"
-          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors duration-200"
-          role="menuitem"
-        >
-          Life Skills Training
-        </Link>
-        <Link
-          href="/education/healthEducation"
-          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors duration-200"
-          role="menuitem"
-        >
-          Health Education
-        </Link>
-        <Link
-          href="/education/financialLiteracy"
-          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors duration-200"
-          role="menuitem"
-        >
-          Financial Literacy
-        </Link>
-        <Link
-          href="/education/socialEmotional"
-          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors duration-200"
-          role="menuitem"
-        >
-          Social and Emotional Learning
-        </Link>
-        <Link
-          href="/education/legalRights"
-          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors duration-200"
-          role="menuitem"
-        >
-          Legal Rights and Advocacy
-        </Link>
-        <Link
-          href="/education/environmental"
-          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors duration-200"
-          role="menuitem"
-        >
-          Environmental Awareness
-        </Link>
-        <Link
-          href="/education/culturalDiversity"
-          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors duration-200"
-          role="menuitem"
-        >
-          Cultural and Diversity Education
-        </Link>
+        {data?.map((item, index) => (
+          <Link
+            key={index}
+            href={item.link}
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors duration-200"
+            role="menuitem"
+            onClick={handleClick}
+          >
+            {item.title}
+          </Link>
+        ))}
       </div>
     </div>
   );
