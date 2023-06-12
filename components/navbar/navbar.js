@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { RiArrowDropDownLine } from "react-icons/ri";
 import MobileNavbar from "./mobileNavbar";
 import Link from "next/link";
 import DropDown from "./dropdown";
@@ -32,9 +33,10 @@ const Navbar = () => {
             <div className="relative inline-block text-left">
               <button
                 onClick={handleFunction}
-                className="text-gray-00 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium focus:outline-none"
+                className="text-gray-00 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium focus:outline-none flex justify-center items-end gap-"
               >
-                Information
+                <span>Education</span>
+                <RiArrowDropDownLine />
               </button>
               {dropdownOpen ? <DropDown handler={handleFunction} /> : ""}
             </div>
