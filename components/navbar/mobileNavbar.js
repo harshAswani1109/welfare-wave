@@ -19,7 +19,6 @@ const MobileNavbar = ({ handler }) => {
     <nav className="w-full h-72 delay-1000 ease-in-out duration-100 transition-shadow p-4 absolute -top-0 z-10">
       <div className="flex justify-center flex-col items-start text-white bg-black h-full gap-4">
         <div className="flex flex-row justify-between items-end w-full px-4 text-xl">
-          <span>HI I'am MobileNavbar</span>
           <span>
             <RxCross1 onClick={handler} />
           </span>

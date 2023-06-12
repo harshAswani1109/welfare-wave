@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="flex justify-between items-center px-10 h-20 ">
-        <div>HI I'am Navbar</div>
+      <div></div>
         <div className="hidden md:block">
           <div className="ml-10 flex items-baseline space-x-4">
             <Link
