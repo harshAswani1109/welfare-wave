@@ -4,10 +4,11 @@ import { AiFillInstagram } from "react-icons/ai";
 import { ImLinkedin } from "react-icons/im";
 import { FaFacebook } from "react-icons/fa";
 import Link from "next/link";
+import Logo from "../../public/logo.jpeg";
 
 const Footer = () => {
   return (
-    <div className="flex justify-center items-center flex-row-reverse max-lg:flex-col-reverse max-lg:gap-4 sm:mx-20 mt-10 ">
+    <div className="flex justify-center items-center flex-row-reverse max-lg:flex-col-reverse max-lg:gap-4 sm:mx-20 mt-8">
       <div className="flex justify-center items-center lg:items-start flex-col lg:w-2/5">
         <span className="text-6xl max-sm:text-3xl font-bold ">
           Welfare Wave
@@ -31,7 +32,7 @@ const Footer = () => {
         </div>
         <div className="flex justify-center items-center flex-row max-sm:flex-col gap-2 ">
           <Link href="/contact">
-            <button className="bg-black hover:bg-red-500 text-white border-2 border-black font-bold p-2 rounded-full h-12 w-40 max-sm:w-72 sm:w-44">
+            <button className="bg-black hover:bg-blue-600 text-white border-2 border-black font-bold p-2 rounded-full h-12 w-40 max-sm:w-72 sm:w-44">
               Contact Us
             </button>
           </Link>
@@ -45,7 +46,7 @@ const Footer = () => {
       </div>
       <div className="flex justify-center items-center lg:w-3/5">
         <Link href="/">
-          {/* <Image src={bluneo} height={300} width={300} /> */}
+            <Image src={Logo} height={300} width={300} /> 
         </Link>
       </div>
     </div>

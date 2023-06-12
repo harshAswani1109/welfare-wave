@@ -6,7 +6,7 @@ import {BiChevronDownCircle} from "react-icons/bi";
 const Layout = ({ handleClick, isSomeActive, data, turn, setTurn }) => {
     return (
         <div className='items-center flex flex-col lg:w-7/12 lg:mt-7 w-full my-5 px-4'>
-            <div className='font-sf text-3xl px-6 py-3 text-white rounded-md bg-gradient-to-r from-blue-700 to-sky-500'>
+            <div className='font-sf text-3xl px-6 py-3 text-white rounded-md bg-gray-700'>
                 Frequently Asked Questions
             </div>
         <div className='flex items-center justify-between w-full mb-6 lg:justify-end'>
@@ -14,7 +14,7 @@ const Layout = ({ handleClick, isSomeActive, data, turn, setTurn }) => {
                 className="flex items-center mr-3 space-x-1 text-sm font-bold lg:text-base lg:space-x-2 py-2 px-4 bg-slate-50"
                 onClick={handleClick}
         >
-            <span className="text-sky-500 min-w-fit text-ellipsis">
+            <span className="text-black min-w-fit text-ellipsis">
             {!isSomeActive ? "Open All" : "Close All"}
             </span>
             <div

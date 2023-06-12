@@ -26,7 +26,7 @@ const Accordion = ({ question, answer, turn, setTurn, idx }) => {
         >
         <div className='py-3'>
             <div className='flex items-center justify-between h-14 text-left'>
-                <span className='ml-2 font-medium lg:font-semibold lg:text-xl text-sm text-sky-600'>{question}</span>
+                <span className='ml-2 font-medium lg:font-semibold lg:text-xl text-sm text-gray-500'>{question}</span>
                 <div>
                 {turn[idx] ? (
                 // <img src={minus} alt="" width={20} height={20} />
