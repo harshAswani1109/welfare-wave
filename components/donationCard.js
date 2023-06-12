@@ -6,11 +6,12 @@ import mumbai from "./assets/mumbai.jpg";
 import manipur from "./assets/manipur.jpg";
 import { useState } from "react";
 import Qr from "./qr";
+import { RxCross1 } from "react-icons/rx";
 
 const DonationCard = () => {
   const [dropdownOpen, setdropdownOpen] = useState(false);
   const handleFunction = () => {
-    !setdropdownOpen;
+    setdropdownOpen(!dropdownOpen);
   };
 
   const data = [
@@ -36,27 +37,33 @@ const DonationCard = () => {
 
   return (
     <div>
+      {dropdownOpen ? <Qr handler={handleFunction} /> : ""}
+      <div className="flex justify-end max-lg:absolute w-full mt-10 pr-10">
+        {dropdownOpen ? (
+          <RxCross1 onClick={handleFunction} className="z-30 " />
+        ) : (
+          ""
+        )}
+      </div>
       <div className="flex flex-wrap justify-center items-center gap-10 py-8">
         {data?.map((item) => (
           <div
             className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:shadow-xl transition duration-300 ease-in-out"
             key={item.id}
           >
-            <Link href="#">
-              <div className="relative w-full">
-                <Image
-                  className="rounded-t-lg h-60 w-full"
-                  src={item.image}
-                  alt="Incident"
-                />
-              </div>
-            </Link>
+            <div className="relative w-full">
+              <Image
+                className="rounded-t-lg h-60 w-full"
+                src={item.image}
+                alt="Incident"
+              />
+            </div>
+
             <div className="p-5">
-              <Link href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  {item.title}
-                </h5>
-              </Link>
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                {item.title}
+              </h5>
+
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 {item.body}
               </p>
@@ -71,7 +78,6 @@ const DonationCard = () => {
             </div>
           </div>
         ))}
-        {dropdownOpen ? <Qr handler={handleFunction} /> : ""}
       </div>
     </div>
   );
