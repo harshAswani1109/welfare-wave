@@ -5,7 +5,7 @@ import incident from "./assets/trainIncident.jpg";
 import mumbai from "./assets/mumbai.jpg";
 import manipur from "./assets/manipur.jpg";
 import { useState } from "react";
-import qr from "./assets/qr.jpg";
+import Qr from "./qr";
 
 const DonationCard = () => {
   const [dropdownOpen, setdropdownOpen] = useState(false);
@@ -71,13 +71,7 @@ const DonationCard = () => {
             </div>
           </div>
         ))}
-        {dropdownOpen ? (
-          <div handler={handleFunction} className="bg-blur ">
-            <Image src={qr} className="h-60 w-60" />
-          </div>
-        ) : (
-          ""
-        )}
+        {dropdownOpen ? <Qr handler={handleFunction} /> : ""}
       </div>
     </div>
   );
