@@ -10,7 +10,7 @@ const Hero = () => {
             <span className="text-indigo-700"> Nourish your Soul </span>
           </h1>
           <p className="mt-5 sm:mt-10 lg:w-10/12 text-gray-400 font-normal text-center text-sm sm:text-lg">
-            Team HNM wants support of you guys in making up numerous souls lie
+            Our Team wants support of you guys in making up numerous souls lie
             down with full stomachs. There is nothing greater than love invested
             in helping to feed the impoverished living in hunger.
           </p>
