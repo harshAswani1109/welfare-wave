@@ -8,7 +8,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className="flex justify-center items-center flex-row-reverse max-lg:flex-col-reverse max-lg:gap-4 sm:mx-20 mt-10 ">
-      <div className="flex justify-center items-center lg:items-start  flex-col lg:w-2/5">
+      <div className="flex justify-center items-center lg:items-start flex-col lg:w-2/5">
         <span className="text-6xl max-sm:text-3xl font-bold ">
           Welfare Wave
         </span>

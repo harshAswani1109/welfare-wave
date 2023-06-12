@@ -1,7 +1,17 @@
+import AboutUs from "./landingComponents/AboutUs";
+import CoreTeam from "./landingComponents/CoreTeam";
+import Donate from "./landingComponents/Donate";
+import Hero from "./landingComponents/Hero";
+
 const Landing = () => {
   return (
     <section>
-      <div>HI I'am Landing</div>
+      <div>
+        <Hero />
+        <AboutUs />
+        <Donate />
+        <CoreTeam />
+      </div>
     </section>
   );
 };
