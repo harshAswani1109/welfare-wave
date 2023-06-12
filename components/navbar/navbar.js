@@ -3,12 +3,14 @@ import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import MobileNavbar from "./mobileNavbar";
 import Link from "next/link";
+import DropDown from "./dropdown";
 
 const Navbar = () => {
   const [dropdownOpen, setdropdownOpen] = useState(false);
   const handleFunction = () => {
     setdropdownOpen(!dropdownOpen);
   };
+
   return (
     <nav>
       <div className="flex justify-between items-center px-10 h-20 ">
@@ -27,12 +29,15 @@ const Navbar = () => {
             >
               About
             </Link>
-            <Link
-              href="/information  "
-              className="text-gray-00 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-            >
-              Information
-            </Link>
+            <div className="relative inline-block text-left">
+              <button
+                onClick={handleFunction}
+                className="text-gray-00 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium focus:outline-none"
+              >
+                Information
+              </button>
+              {dropdownOpen ? <DropDown handler={handleFunction} /> : ""}
+            </div>
             <Link
               href="/donation"
               className="text-gray-00 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -45,8 +50,11 @@ const Navbar = () => {
           <RxHamburgerMenu onClick={handleFunction} />
         </div>
       </div>
-      {dropdownOpen ? <MobileNavbar handler={handleFunction} /> : ""}
+      <div className="md:hidden">
+        {dropdownOpen ? <MobileNavbar handler={handleFunction} /> : ""}
+      </div>
     </nav>
   );
 };
+
 export default Navbar;
