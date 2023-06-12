@@ -80,7 +80,7 @@ const EnvironmentalAwareness = () => {
         {data?.map((item, index) => {
           return (
             <div
-              className="bg-[#ECEEFF] rounded-xl w-72 sm:w-96 hover:shadow-2xl transition duration-300 ease-in-out animate-fade-in"
+              className="bg-[#FED7D7] rounded-xl w-72 sm:w-96 hover:shadow-2xl transition duration-300 ease-in-out animate-fade-in"
               key={item.id}
             >
               <div className="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-72 sm:w-96 md:w-auto">
