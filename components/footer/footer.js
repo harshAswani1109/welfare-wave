@@ -31,12 +31,12 @@ const Footer = () => {
         </div>
         <div className="flex justify-center items-center flex-row max-sm:flex-col gap-2 ">
           <Link href="/contact">
-            <button class="bg-black hover:bg-red-500 text-white border-2 border-black font-bold p-2 rounded-full h-12 w-40 max-sm:w-72 sm:w-44">
+            <button className="bg-black hover:bg-red-500 text-white border-2 border-black font-bold p-2 rounded-full h-12 w-40 max-sm:w-72 sm:w-44">
               Contact Us
             </button>
           </Link>
           <Link href="/faq">
-            <button class="bg-white hover:bg-black hover:text-white text-black border-2 border-black font-bold p-2 rounded-full h-12 max-sm:w-72 sm:w-44">
+            <button className="bg-white hover:bg-black hover:text-white text-black border-2 border-black font-bold p-2 rounded-full h-12 max-sm:w-72 sm:w-44">
               F.A.Q
             </button>
           </Link>
