@@ -16,13 +16,13 @@ const Navbar = () => {
         <div className="hidden md:block">
           <div className="ml-10 flex items-baseline space-x-4">
             <Link
-              href="#"
+              href="/"
               className="text-gray-00 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               Home
             </Link>
             <Link
-              href="#"
+              href="/"
               className="text-gray-00 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               About
@@ -34,7 +34,7 @@ const Navbar = () => {
               Information
             </Link>
             <Link
-              href="donation"
+              href="/donation"
               className="text-gray-00 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               Donation
