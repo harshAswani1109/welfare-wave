@@ -34,7 +34,7 @@ const Navbar = () => {
               Information
             </Link>
             <Link
-              href="donation"
+              href="/donation"
               className="text-gray-00 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               Donation
